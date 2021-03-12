@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+body {
+  margin: 0;
+  padding: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main--grid--container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 110vh;
+      grid-template-rows: 110vh;
+}
+
+.main--grid--container .main--img--container {
+  background-image: url("../assets/Demo 1.svg");
+  background-size: 85%;
+  background-repeat: no-repeat;
+}
+
+.main--grid--container .card--container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (12em)[2];
+      grid-template-rows: repeat(2, 12em);
+  place-items: center;
+  background: #f2f1f9;
+  background: linear-gradient(6deg, #f2f1f9 0%, #3cd887 99%);
+}
+
+.main--grid--container .card--container form {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  top: 2em;
+}
+
+.main--grid--container .card--container form .input--line {
+  margin-top: 5px;
+  border-bottom: 2px solid #2f2e41;
+  border-radius: 1.5%;
+  width: 20em;
+}
+
+.main--grid--container .card--container form .input--line--container {
+  margin-bottom: 2.5em;
+}
+
+.main--grid--container .card--container form button {
+  height: 120%;
+  width: 85%;
+  border: none;
+  border-radius: 0.45em;
+  background-color: #2f2e41;
+  box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main--grid--container .card--container form button .btn--text {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.05em;
+  color: white;
+}
+
+.main--grid--container .card--container h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 3em;
+  color: #2f2e41;
+  margin-bottom: 2em;
+}
+
+.main--grid--container .card--container input {
+  outline: none;
+  border: none;
+  background: none;
+  border-radius: 3px;
+}
+
+.main--grid--container .card--container input:focus {
+  outline: none;
+}
+/*# sourceMappingURL=main.css.map */
