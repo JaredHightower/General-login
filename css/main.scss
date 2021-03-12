@@ -90,6 +90,7 @@ body {
     .card--container--inner {
       transition: transform 2s;
       transform-style: preserve-3d;
+      backface-visibility: hidden;
       position: relative;
 
       .card--front,
