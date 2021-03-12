@@ -72,7 +72,7 @@ body {
       font-family: $rubikFontFam;
       font-size: 3em;
       color: #2f2e41;
-      margin-bottom: 2em;
+      margin-top: 100%;
     }
 
     input {
@@ -81,10 +81,32 @@ body {
 
       background: none;
       border-radius: 3px;
+      width: 23em;
     }
 
     input:focus {
       outline: none;
+    }
+    .card--container--inner {
+      transition: transform 2s;
+      transform-style: preserve-3d;
+      position: relative;
+
+      .card--front,
+      .card--back {
+        backface-visibility: hidden;
+      }
+
+      .card--back {
+        height: 5em;
+        width: 5em;
+        background-color: #2f2e41;
+        transform: rotateY(180deg);
+      }
+    }
+
+    .card--container--flip {
+      transform: rotateY(180deg);
     }
   }
 }

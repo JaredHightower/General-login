@@ -71,7 +71,7 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 3em;
   color: #2f2e41;
-  margin-bottom: 2em;
+  margin-top: 100%;
 }
 
 .main--grid--container .card--container input {
@@ -79,9 +79,39 @@ body {
   border: none;
   background: none;
   border-radius: 3px;
+  width: 23em;
 }
 
 .main--grid--container .card--container input:focus {
   outline: none;
+}
+
+.main--grid--container .card--container .card--container--inner {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+}
+
+.main--grid--container .card--container .card--container--inner .card--front,
+.main--grid--container .card--container .card--container--inner .card--back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.main--grid--container .card--container .card--container--inner .card--back {
+  height: 5em;
+  width: 5em;
+  background-color: #2f2e41;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.main--grid--container .card--container .card--container--flip {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 /*# sourceMappingURL=main.css.map */

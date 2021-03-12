@@ -8,44 +8,53 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <section class="main--grid--container">
+    <main class="main--grid--container">
       <section class="main--img--container"></section>
 
+      <!-- parent--card--container 👇-->
       <section class="card--container">
-        <h1 class="card--header">Create Account</h1>
-        <form class="main--form">
-          <!-- input--line--container-1 -->
-          <div class="input--line--container">
-            <input
-              type="text"
-              class="FirstName"
-              placeholder="firstName: "
-            /><br />
-            <div class="input--line"></div>
-            <br />
-          </div>
-          <!-- input--line--container-2 -->
-          <div class="input--line--container">
-            <input
-              type="text"
-              class="lastName"
-              placeholder="lastName: "
-            /><br />
-            <div class="input--line"></div>
-            <br />
-          </div>
-          <!-- input--line--container-3 -->
-          <div class="input--line--container">
-            <input type="text" class="email" placeholder="Email: " /><br />
-            <div class="input--line"></div>
-            <br />
-          </div>
+        <!-- child1--card--container  👇-->
+        <section class="card--container--inner">
+          <section class="card--front">
+            <h1 class="card--header">Create Account</h1>
+            <form class="main--form">
+              <!-- input--line--container-1  -->
+              <div class="input--line--container">
+                <input
+                  type="text"
+                  class="FirstName"
+                  placeholder="firstName: "
+                /><br />
+                <div class="input--line"></div>
+                <br />
+              </div>
+              <!-- input--line--container-2 -->
+              <div class="input--line--container">
+                <input
+                  type="text"
+                  class="lastName"
+                  placeholder="lastName: "
+                /><br />
+                <div class="input--line"></div>
+                <br />
+              </div>
+              <!-- input--line--container-3 -->
+              <div class="input--line--container">
+                <input type="text" class="email" placeholder="Email: " /><br />
+                <div class="input--line"></div>
+                <br />
+              </div>
 
-          <button class="primary--btn">
-            <span class="btn--text">Create</span>
-          </button>
-        </form>
+              <button class="primary--btn">
+                <span class="btn--text">Create</span>
+              </button>
+            </form>
+          </section>
+          <!-- child2--card--container 👇-->
+          <section class="card--back"></section>
+        </section>
       </section>
-    </section>
+    </main>
+    <script src="./script.js"></script>
   </body>
 </html>
